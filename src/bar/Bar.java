@@ -2,6 +2,7 @@ package bar;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Bar {
 	
@@ -12,10 +13,21 @@ public class Bar {
 	
 	public static void main (String[] args) {
 		
-		int qttdC = 5;
-		int qttdG = 2;
-		int capacidade = 2;
-		int rodadas = 3;
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a quantidade de clientes: ");
+        int qttdC = scanner.nextInt();
+
+        System.out.print("Digite a quantidade de garcons: ");
+        int qttdG = scanner.nextInt();
+
+        System.out.print("Digite a capacidade do garcom: ");
+        int capacidade = scanner.nextInt();
+
+        System.out.print("Digite o número de rodadas: ");
+        int rodadas = scanner.nextInt();
+        
+        scanner.close();
 		
 		garcons = new ArrayList<>();
 		clientes = new ArrayList<>();
